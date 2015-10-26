@@ -20,9 +20,11 @@ var list function(parametr){
 };
 list(MyFriends)
 
-var search function(name){
-    for(var key MyFriends){
-        if (MyFriends [key2].firstName===name){
+var search function(name) {
+    for (var key MyFriends
+)
+    {
+        if (MyFriends [key2].firstName === name) {
             console.log(MyFriends[key2]);
             return MyFriends[key2]
         }
