@@ -1,34 +1,68 @@
 'use strict';
 
-var MyFriends= {
-    bill: {},
-    steve: {}
-}
-friends.bill.firstName="Bill";
-friends.bill.number="+7 (111) 777-2-222";
-friends.bill.address="bill@example.com";
+var phoneBook = [];
 
-friends.steve.firstName="Steve";
-friends.steve.number="+7 (111) 477-2-555";
-friends.steve.address="steve@example.com";
+// Здесь вы храните записи как хотите
 
-var list function(parametr){
-    for(var key parametr)
-    {
-        console.log(key);
+/*
+ Функция добавления записи в телефонную книгу.
+ На вход может прийти что угодно, будьте осторожны.
+ */
+module.exports.add = function add(name, phone, email) {
+    var friends = {
+        name:{},
+        phone:{},
+        email:{}
     }
-};
-list(MyFriends)
 
-var search function(name) {
-    for (var key MyFriends
-)
-    {
-        if (MyFriends [key2].firstName === name) {
-            console.log(MyFriends[key2]);
-            return MyFriends[key2]
+}
+/*
+ Функция поиска записи в телефонную книгу.
+ Поиск ведется по всем полям.
+ */
+module.exports.find = function find(query) {
+    var search = function (name){
+        for(var key2 in phoneBook){
+            if(phoneBook[key2].name === name)
+            {
+              console.log(phoneBook[key2]);
+                return phoneBook[key2]
+            }
         }
-    }
+    };
+    search();
+
+
+
+    // Ваша удивительная магия здесь
+
 }
 
+/*
+ Функция удаления записи в телефонной книге.
+ */
+module.exports.remove = function remove(query) {
+
+
+    // Ваша необьяснимая магия здесь
+
+};
+
+/*
+ Функция импорта записей из файла (задача со звёздочкой!).
+ */
+module.exports.importFromCsv = function importFromCsv(filename) {
+
+
+    // Ваша чёрная магия:
+    // - Разбираете записи из `data`
+    // - Добавляете каждую запись в книгу
+};
+
+/*
+ Функция вывода всех телефонов в виде ASCII (задача со звёздочкой!).
+ */
+module.exports.showTable = function showTable() {
+
+};
 
